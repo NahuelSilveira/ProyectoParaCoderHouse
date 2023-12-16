@@ -1,0 +1,455 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%; /* 1rem= 10px */
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+ol{
+    font-size: 1.5rem;
+}
+
+/* Header */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #0082e6;
+    height: 140 px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover {
+    background-color: #1b9bff;
+    transition: .5s;
+
+}
+
+a.active,a:hover :not(.logo) {
+    background-color: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 130px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo{
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/* main de index */
+
+/* Banner */
+
+.main  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.especialidades-principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner{
+    background-image: url(../images/banner.jpg);
+    height: 400px;
+    background-size: cover;
+
+}
+
+.titulo-inicio{
+    color: white;
+    text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Presentacion */
+
+.especialidades-principal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.especialidades-index{
+    margin-left: 10px;
+    margin-top: 100px;
+    background-image: url(../images/doctor1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 525px;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    color: #1AACAC;
+    text-shadow: 1px 0px 0px rgba(0,0,0,0.62);
+    border-radius: 20px;
+   
+}
+
+.banner h1{
+    padding-top: 130px;
+}
+
+.especialidades-index ol{
+    list-style: none;
+}
+
+.especialidades-index h2{
+    font-size: 2rem;
+}
+.quienes-somos-index{
+    margin-top: 100px;
+    background-image: url(../images/doctor2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 525px;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    color: #1AACAC;
+    text-shadow: 1px 0px 0px rgba(0,0,0,0.62);
+    border-radius: 20px;
+}
+
+.quienes-somos-index h3{
+    font-size: 2rem;
+}
+
+.nuestros-horarios-index{
+    margin-right: 10px;
+    margin-top: 100px;
+    background-image: url(../images/doctor3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 525px;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    color: #1AACAC;
+    text-shadow: 1px 0px 0px rgba(0,0,0,0.62);
+    border-radius: 20px;
+
+}
+
+.nuestros-horarios-index{
+    font-size: 2rem;
+}
+
+/* Galeria de Imagenes */
+
+.nuestro-consultorio-title{
+    text-align: center;
+    font-size: 50px;
+    color: #3da1aa;
+    text-shadow: 4px 2px 6px rgba(0,0,0,0.66);
+    display: inline-flexbox;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+
+
+
+/* .carousel-inner img {
+    max-height: 800px;
+    max-width: 1200px;
+    border-radius: 20px;
+    justify-content: center;
+} */
+
+.carousel-inner{
+    max-height: 900px;
+    max-width: 1200px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+/* .nuestro-consultorio img{
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+} */
+
+
+/* Pagina Especialidades */
+
+.especialidades-page li{
+    list-style: none;
+    font-size: 2rem;
+    background-color: #3da1aa;
+    background-size: cover;
+}
+
+.especialidades-title{
+    font-size: 4rem;
+    background-image: url(../images/doctor2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Pagina Turno */
+
+.turno-title{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
+    text-align: center;
+    font-size: 50px;
+}
+
+.turno-page{
+    background-image: url(../images/doctor3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 1880px;
+    height: 400px;
+    text-align: center;
+}
+
+
+
+/* Pagina Contacto */
+
+.whatsapp-contacto img{
+    width: 40px;
+}
+
+/* Pagina Quienes somos? */
+
+.quienes-somos-page{
+    background-image: url(../images/doctores-dibujo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 1880px;
+    height: 400px;
+    text-align: center;
+}
+
+.quienes-somos-page h1{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
+    text-align: center;
+    font-size: 50px;
+}
+
+.quienes-somos-page p{
+    font-size: 2rem;
+    text-shadow: 1px 0px 0px rgba(255,255,255,0.62);
+}
+
+
+/* Footer */
+
+/* .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    width: 21%;
+    justify-content: space-between;
+}
+
+.whatsapp-logofoot img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+}
+
+.instagram-logofoot img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 43px;
+    margin-top: 4px;
+}
+
+.facebook-logofoot img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 41px;
+    margin-top: 4px;
+}
+
+.phone-logofoot img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 41px;
+    margin-top: 4px;
+}
+
+.logo-footer img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.copy {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -330px;
+}
+
+.footer p{
+    margin-top: 15px;
+}
+
+@media (max-width: 300px) {
+    .footer {display: none;}
+} */
+
+.footer {
+    padding: -0px 0;
+    background-color: #0082e6;
+}
+
+.footer .socials {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+
+.footer .socials a{
+    font-size: 20px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+    margin-top: 25px;
+}
+
+.footer .socials a:hover {
+    opacity: 0.9;
+}
+
+.footer .copy {
+
+    text-align: center;
+    font-size: 18px;
+    color: #aaa;
+}
+
+.whatsapp-flotante img{
+    width: 80px;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+}
+
+@media (max-width: 500px) {
+    .whatsapp-flotante img {
+        width: 55px;
+        bottom: 50px;
+    }
+}
