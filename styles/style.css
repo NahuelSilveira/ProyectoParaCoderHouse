@@ -280,18 +280,53 @@ a.active,a:hover :not(.logo) {
     text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
     text-align: center;
     font-size: 50px;
+    margin-top: 35px;
 }
 
-.turno-page{
+/* .turno-page{
+    display: flex;
     background-image: url(../images/doctor3.jpg);
     background-size: cover;
     background-position: center;
-    width: 1880px;
-    height: 400px;
+    width: 1920px;
+    height: 1080px;
     text-align: center;
+} */
+
+.turno-page p{
+    text-align: center;
+    margin-top: 45px;
 }
 
+.turno-body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/doctor3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
 
+.footer-turno {
+    position: sticky;
+    top: 100%;
+}
+
+.whatsapp-flotante-turno img{
+    width: 80px;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+}
+
+@media (max-width: 500px) {
+    .whatsapp-flotante-turno img {
+        width: 55px;
+        bottom: 40px;
+    }
+}
 
 /* Pagina Contacto */
 
