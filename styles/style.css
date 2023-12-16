@@ -242,14 +242,6 @@ a.active,a:hover :not(.logo) {
 }
 
 
-
-/* .carousel-inner img {
-    max-height: 800px;
-    max-width: 1200px;
-    border-radius: 20px;
-    justify-content: center;
-} */
-
 .carousel-inner{
     max-height: 900px;
     max-width: 1200px;
@@ -257,11 +249,6 @@ a.active,a:hover :not(.logo) {
     margin-bottom: 50px;
 }
 
-/* .nuestro-consultorio img{
-    width: 600px;
-    height: 600px;
-    border-radius: 20px;
-} */
 
 
 /* Pagina Especialidades */
@@ -338,70 +325,6 @@ a.active,a:hover :not(.logo) {
 
 
 /* Footer */
-
-/* .footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-.socials {
-    display: flex;
-    flex-wrap: wrap;
-    width: 21%;
-    justify-content: space-between;
-}
-
-.whatsapp-logofoot img{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50px;
-}
-
-.instagram-logofoot img{
-    display: flex;
-    flex-wrap: wrap;
-    width: 43px;
-    margin-top: 4px;
-}
-
-.facebook-logofoot img{
-    display: flex;
-    flex-wrap: wrap;
-    width: 41px;
-    margin-top: 4px;
-}
-
-.phone-logofoot img{
-    display: flex;
-    flex-wrap: wrap;
-    width: 41px;
-    margin-top: 4px;
-}
-
-.logo-footer img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    width: 50px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.copy {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -330px;
-}
-
-.footer p{
-    margin-top: 15px;
-}
-
-@media (max-width: 300px) {
-    .footer {display: none;}
-} */
 
 .footer {
     padding: -0px 0;
