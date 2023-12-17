@@ -361,6 +361,13 @@ a.active,a:hover :not(.logo) {
     min-height: 100vh;
 }
 
+
+.row-turno {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    border-radius: 40px;
+  }
+
 .footer-turno {
     position: sticky;
     top: 100%;
