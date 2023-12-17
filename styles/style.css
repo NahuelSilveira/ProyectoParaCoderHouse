@@ -157,7 +157,7 @@ a.active,a:hover :not(.logo) {
 
 .especialidades-principal {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -176,6 +176,14 @@ a.active,a:hover :not(.logo) {
     text-shadow: 1px 0px 0px rgba(0,0,0,0.62);
     border-radius: 20px;
    
+}
+
+.especialidades-index p{
+    margin-top: 60px;
+}
+
+.especialidades-index h2{
+    margin-top: 15px;
 }
 
 .banner h1{
@@ -268,12 +276,11 @@ a.active,a:hover :not(.logo) {
     font-size: 30px;
 }
 
-.col {
-    background-color: white;
-    opacity: 40%;
-    border-radius: 50px;
-}
-
+.row {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    border-radius: 40px;
+  }
 
 @media (max-width: 1000px) {
     .tabla {
