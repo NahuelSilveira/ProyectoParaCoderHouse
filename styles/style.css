@@ -397,14 +397,14 @@ a.active,a:hover :not(.logo) {
 
 /* Pagina Quienes somos? */
 
-.quienes-somos-page{
+/* .quienes-somos-page{
     background-image: url(../images/doctores-dibujo.jpg);
     background-size: cover;
     background-position: center;
     width: 1880px;
     height: 400px;
     text-align: center;
-}
+} */
 
 .quienes-somos-page h1{
     font-size: 4rem;
@@ -412,12 +412,80 @@ a.active,a:hover :not(.logo) {
     text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
     text-align: center;
     font-size: 50px;
+    margin-top: 50px;
 }
 
 .quienes-somos-page p{
-    font-size: 2rem;
-    text-shadow: 1px 0px 0px rgba(255,255,255,0.62);
+    font-size: 3rem;
+    padding: 20px 35px 20px 35px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
+
+@media (max-width: 1000px) {
+    .quienes-somos-page p{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .quienes-somos-page p{
+        font-size: 2rem;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 300px) {
+    .quienes-somos-page p{
+        font-size: 1.5rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+.quienes-somos-body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/doctores-dibujo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+.quienes-somos-p {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    border-radius: 40px;
+    margin-top: 100px;
+  }
+
+.footer-quienes {
+    position: sticky;
+    top: 100%;
+}
+
+.whatsapp-flotante-quienes img{
+    width: 80px;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+}
+
+@media (max-width: 500px) {
+    .whatsapp-flotante-quienes img {
+        width: 55px;
+        bottom: 40px;
+    }
+}
+
 
 
 /* Footer */
