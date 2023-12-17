@@ -5,6 +5,7 @@
 html{
     font-family: 'Lato', sans-serif;
     font-size: 62.5%; /* 1rem= 10px */
+    height: 100%;
 }
 
 p{
@@ -168,22 +169,19 @@ a.active,a:hover :not(.logo) {
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 525px;
-    text-align: center;
     width: 500px;
     height: 300px;
-    overflow: hidden;
+    text-align: center;
+}
+
+
+.especialidades-index2 {
     color: #1AACAC;
     text-shadow: 1px 0px 0px rgba(0,0,0,0.62);
+    margin-top: 40px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
     border-radius: 20px;
-   
-}
-
-.especialidades-index p{
-    margin-top: 60px;
-}
-
-.especialidades-index h2{
-    margin-top: 15px;
 }
 
 .banner h1{
@@ -196,24 +194,40 @@ a.active,a:hover :not(.logo) {
 
 .especialidades-index h2{
     font-size: 2rem;
+    background-color: rgba(0,0,0,.5);
+    color: #1AACAC;
+    border-radius: 40px;
+    margin-top: 35px;
 }
+
 .quienes-somos-index{
     margin-top: 100px;
     background-image: url(../images/doctor2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 525px;
-    text-align: center;
     width: 500px;
     height: 300px;
-    overflow: hidden;
+    border-radius: 20px;
+}
+
+.quienes-somos-index p{
+    text-align: center;
     color: #1AACAC;
     text-shadow: 1px 0px 0px rgba(0,0,0,0.62);
+    margin-top: 40px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
     border-radius: 20px;
 }
 
 .quienes-somos-index h3{
     font-size: 2rem;
+    text-align: center;
+    color: #1AACAC;
+    margin-top: 35px;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 20px;
 }
 
 .nuestros-horarios-index{
@@ -223,20 +237,29 @@ a.active,a:hover :not(.logo) {
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 525px;
-    text-align: center;
     width: 500px;
     height: 300px;
-    overflow: hidden;
+    border-radius: 20px;
+}
+
+.nuestros-horarios-index h4{
+    font-size: 2rem;
+    text-align: center;
+    color: #1AACAC;
+    margin-top: 35px;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 20px;
+}
+
+.nuestros-horarios-index p{
+    text-align: center;
     color: #1AACAC;
     text-shadow: 1px 0px 0px rgba(0,0,0,0.62);
+    margin-top: 40px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
     border-radius: 20px;
-
 }
-
-.nuestros-horarios-index{
-    font-size: 2rem;
-}
-
 /* Galeria de Imagenes */
 
 .nuestro-consultorio-title{
@@ -249,6 +272,11 @@ a.active,a:hover :not(.logo) {
     margin-top: 120px;
 }
 
+@media (max-width: 500px) {
+    .nuestro-consultorio-title {
+        font-size: 30px;
+    }
+}
 
 .carousel-inner{
     max-height: 900px;
@@ -257,7 +285,21 @@ a.active,a:hover :not(.logo) {
     margin-bottom: 50px;
 }
 
+@media (max-width: 500px) {
+    .carousel-inner{
+        max-height: 450px;
+        max-width: 600px;
+        border-radius: 20px;
+        margin-bottom: 50px;
+    }
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+}
 
 /* Pagina Especialidades */
 
@@ -622,8 +664,9 @@ textarea {
 /* Footer */
 
 .footer {
-    padding: -0px 0;
     background-color: #0082e6;
+    position: sticky;
+    top: 100%;
 }
 
 .footer .socials {
@@ -661,7 +704,7 @@ textarea {
 .whatsapp-flotante img{
     width: 80px;
     position: fixed;
-    bottom: 30px;
+    bottom: 15px;
     right: 10px;
 }
 
