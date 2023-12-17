@@ -388,23 +388,7 @@ a.active,a:hover :not(.logo) {
 }
 
 
-
-/* Pagina Contacto */
-
-.whatsapp-contacto img{
-    width: 40px;
-}
-
 /* Pagina Quienes somos? */
-
-/* .quienes-somos-page{
-    background-image: url(../images/doctores-dibujo.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 1880px;
-    height: 400px;
-    text-align: center;
-} */
 
 .quienes-somos-page h1{
     font-size: 4rem;
@@ -486,7 +470,154 @@ a.active,a:hover :not(.logo) {
     }
 }
 
+/* Pagina Contacto */
 
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    background-color: #0082e6;
+}
+
+form h2 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
+    margin-bottom: 40px;
+}
+
+.form-txt {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.input-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input , textarea{
+    background-color: white;
+    padding: 20px 14px;
+    margin-bottom: 25px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.formulario textarea {
+    font-size: 15px;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+::placeholder {
+    color: #0082e6;
+    font-size: 15px;
+}
+
+:focus {
+    outline: 1px solid #16ffb9;
+}
+
+.formulario form {
+    width: 70%;
+}
+
+.boton {
+    margin-top: 15px;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+
+@media (max-width: 500px) {
+    .formulario input , textarea{
+        font-size: 10px;
+    }
+    .formulario textarea {
+        font-size: 10px;
+    }
+    form h2{
+        font-size: 2rem;
+    }
+    ::placeholder {
+        font-size: 10px;
+    }
+    form {
+        padding: 25px 32px;
+    }
+}
+
+
+
+.whatsapp-contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-p {
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    border-radius: 40px;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.mapita {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.whatsapp-contacto img{
+    width: 40px;
+}
+
+
+.contacto-body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/Consultorio-1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.footer-contacto {
+    position: sticky;
+    top: 100%;
+}
+
+.whatsapp-flotante-contacto img{
+    width: 80px;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+}
+
+@media (max-width: 500px) {
+    .whatsapp-flotante-contacto img {
+        width: 55px;
+        bottom: 40px;
+    }
+}
 
 /* Footer */
 
