@@ -253,24 +253,79 @@ a.active,a:hover :not(.logo) {
 
 /* Pagina Especialidades */
 
-.especialidades-page li{
-    list-style: none;
-    font-size: 2rem;
-    background-color: #3da1aa;
-    background-size: cover;
-}
 
 .especialidades-title{
     font-size: 4rem;
-    background-image: url(../images/doctor2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
     color: white;
     text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
     text-align: center;
     font-size: 50px;
+    margin-top: 35px;
 }
+
+.tabla {
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.col {
+    background-color: white;
+    opacity: 40%;
+    border-radius: 50px;
+}
+
+
+@media (max-width: 1000px) {
+    .tabla {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .tabla {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .tabla {
+        font-size: 10px;
+    }
+}
+
+
+.especialidades-body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/doctor4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+.footer-especialidades {
+    position: sticky;
+    top: 100%;
+}
+
+.whatsapp-flotante-especialidades img{
+    width: 80px;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+}
+
+@media (max-width: 500px) {
+    .whatsapp-flotante-especialidades img {
+        width: 55px;
+        bottom: 40px;
+    }
+}
+
+
 
 /* Pagina Turno */
 
@@ -282,16 +337,6 @@ a.active,a:hover :not(.logo) {
     font-size: 50px;
     margin-top: 35px;
 }
-
-/* .turno-page{
-    display: flex;
-    background-image: url(../images/doctor3.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 1920px;
-    height: 1080px;
-    text-align: center;
-} */
 
 .turno-page p{
     text-align: center;
@@ -327,6 +372,8 @@ a.active,a:hover :not(.logo) {
         bottom: 40px;
     }
 }
+
+
 
 /* Pagina Contacto */
 
