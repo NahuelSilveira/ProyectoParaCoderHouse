@@ -1,0 +1,38 @@
+/*Pagina Turno*/
+
+.turno-body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/doctor3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+
+    .turno-page{
+
+        .tabla{
+            text-align: center;
+            margin-top: 45px;
+            font-size: 30px;
+        }
+        
+
+        h1{
+            font-size: 4rem;
+            color: white;
+            text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
+            text-align: center;
+            font-size: 50px;
+            margin-top: 35px;
+        }
+
+        .row-turno {
+            background-color: rgba(0,0,0,.5);
+            color: #fff;
+            border-radius: 40px;
+          }
+    }
+
+}

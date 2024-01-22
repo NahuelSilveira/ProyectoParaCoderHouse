@@ -1,0 +1,77 @@
+/*Header*/
+
+header {
+
+
+
+    nav {
+        background-color: $celeste;
+        height: 140 px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        
+
+
+        .logo img{
+            width: 150px;
+            height: 150px;
+        
+        }
+
+        ul {
+            float: right;
+            margin-right: 10px;
+            margin-top: 50px;
+
+
+
+            li {
+                display: inline-block;
+                line-height: 40px;
+                margin: 0 5px;
+
+                a {
+                    color: white;
+                    font-size: 17px;
+                    padding: 7px 13px;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                }
+                
+            }
+            
+        }
+    }
+
+
+}
+
+
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 130px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+        
+#check{
+    display: none;
+}
+
+a.active,a:hover {
+    background-color: $celeste-claro;
+    transition: .5s;
+
+}
+
+a.active,a:hover :not(.logo) {
+    background-color: $celeste-claro;
+    transition: .5s;
+}

@@ -1,0 +1,46 @@
+/*Footer*/
+
+.footer {
+    background-color: $celeste;
+    position: sticky;
+    top: 100%;
+
+    .socials {
+        text-align: center;
+        padding-bottom: 25px;
+        color: #4b4c4d;
+
+        a{
+            font-size: 20px;
+            color: inherit;
+            border: 1px solid #ccc;
+            width: 30px;
+            height: 30px;
+            line-height: 25px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 8px;
+            opacity: 0.75;
+            margin-top: 25px;
+        }
+
+        .footer .socials a:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .copy {
+
+        text-align: center;
+        font-size: 18px;
+        color: #aaa;
+    }
+
+    .whatsapp-flotante img{
+        width: 80px;
+        position: fixed;
+        bottom: 15px;
+        right: 10px;
+    }
+}

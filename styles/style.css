@@ -1,717 +1,534 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 /* font-family: 'Lato', sans-serif; */
-
-html{
-    font-family: 'Lato', sans-serif;
-    font-size: 62.5%; /* 1rem= 10px */
-    height: 100%;
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%; /* 1rem= 10px */
+  height: 100%;
 }
 
-p{
-    font-size: 1.5rem;
+p {
+  font-size: 1.5rem;
 }
 
-ol{
-    font-size: 1.5rem;
+ol {
+  font-size: 1.5rem;
 }
 
-/* Header */
-
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-
-nav {
-    background-color: #0082e6;
-    height: 140 px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo img{
-    width: 150px;
-    height: 150px;
-
-}
-
-nav ul{
-    float: right;
-    margin-right: 10px;
-    margin-top: 50px;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 40px;
-    margin: 0 5px;
-}
-
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-a.active,a:hover {
-    background-color: #1b9bff;
-    transition: .5s;
-
-}
-
-a.active,a:hover :not(.logo) {
-    background-color: #1b9bff;
-    transition: .5s;
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 130px;
-    margin-left: 20px;
-    cursor: pointer;
-    display: none;
-}
-
-
-#check{
-    display: none;
-}
-
-@media (max-width: 952px) {
-    label.logo{
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover,a.active{
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-}
-
-/* main de index */
-
-/* Banner */
-
-.main  {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.especialidades-principal {
-    display: flex;
-    justify-content: space-between;
-}
-
-.banner{
-    background-image: url(../images/banner.jpg);
-    height: 400px;
-    background-size: cover;
-
-}
-
-.titulo-inicio{
-    color: white;
-    text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
-    text-align: center;
-    font-size: 50px;
-}
-
-/* Presentacion */
-
-.especialidades-principal {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.especialidades-index{
-    margin-left: 10px;
-    margin-top: 100px;
-    background-image: url(../images/doctor1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 525px;
-    width: 500px;
-    height: 300px;
-    text-align: center;
-}
-
-
-.especialidades-index2 {
-    color: #1AACAC;
-    text-shadow: 1px 0px 0px rgba(0,0,0,0.62);
-    margin-top: 40px;
-    background-color: rgba(0,0,0,.5);
-    color: #fff;
-    border-radius: 20px;
-}
-
-.banner h1{
-    padding-top: 130px;
-}
-
-.especialidades-index ol{
-    list-style: none;
-}
-
-.especialidades-index h2{
-    font-size: 2rem;
-    background-color: rgba(0,0,0,.5);
-    color: #1AACAC;
-    border-radius: 40px;
-    margin-top: 35px;
-}
-
-.quienes-somos-index{
-    margin-top: 100px;
-    background-image: url(../images/doctor2.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 525px;
-    width: 500px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-.quienes-somos-index p{
-    text-align: center;
-    color: #1AACAC;
-    text-shadow: 1px 0px 0px rgba(0,0,0,0.62);
-    margin-top: 40px;
-    background-color: rgba(0,0,0,.5);
-    color: #fff;
-    border-radius: 20px;
-}
-
-.quienes-somos-index h3{
-    font-size: 2rem;
-    text-align: center;
-    color: #1AACAC;
-    margin-top: 35px;
-    background-color: rgba(0,0,0,.5);
-    border-radius: 20px;
-}
-
-.nuestros-horarios-index{
-    margin-right: 10px;
-    margin-top: 100px;
-    background-image: url(../images/doctor3.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 525px;
-    width: 500px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-.nuestros-horarios-index h4{
-    font-size: 2rem;
-    text-align: center;
-    color: #1AACAC;
-    margin-top: 35px;
-    background-color: rgba(0,0,0,.5);
-    border-radius: 20px;
-}
-
-.nuestros-horarios-index p{
-    text-align: center;
-    color: #1AACAC;
-    text-shadow: 1px 0px 0px rgba(0,0,0,0.62);
-    margin-top: 40px;
-    background-color: rgba(0,0,0,.5);
-    color: #fff;
-    border-radius: 20px;
-}
-/* Galeria de Imagenes */
-
-.nuestro-consultorio-title{
-    text-align: center;
-    font-size: 50px;
-    color: #3da1aa;
-    text-shadow: 4px 2px 6px rgba(0,0,0,0.66);
-    display: inline-flexbox;
-    flex-wrap: wrap;
-    margin-top: 120px;
-}
-
-@media (max-width: 500px) {
-    .nuestro-consultorio-title {
-        font-size: 30px;
-    }
-}
-
-.carousel-inner{
-    max-height: 900px;
-    max-width: 1200px;
-    border-radius: 20px;
-    margin-bottom: 50px;
-}
-
-@media (max-width: 500px) {
-    .carousel-inner{
-        max-height: 450px;
-        max-width: 600px;
-        border-radius: 20px;
-        margin-bottom: 50px;
-    }
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
 }
 
-/* Pagina Especialidades */
-
-
-.especialidades-title{
-    font-size: 4rem;
-    color: white;
-    text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
-    text-align: center;
-    font-size: 50px;
-    margin-top: 35px;
+/*Header*/
+header nav {
+  background-color: #0082e6;
+  height: 140 px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .logo img {
+  width: 150px;
+  height: 150px;
+}
+header nav ul {
+  float: right;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+header nav ul li {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 5px;
+}
+header nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
-.tabla {
-    margin-top: 100px;
-    font-size: 30px;
-    margin-bottom: 20px;
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 130px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
 }
 
-.row {
-    background-color: rgba(0,0,0,.5);
-    color: #fff;
-    border-radius: 40px;
-  }
-
-@media (max-width: 1000px) {
-    .tabla {
-        font-size: 20px;
-    }
+#check {
+  display: none;
 }
 
-@media (max-width: 800px) {
-    .tabla {
-        font-size: 15px;
-    }
+a.active, a:hover {
+  background-color: #1b9bff;
+  transition: 0.5s;
 }
 
-@media (max-width: 500px) {
-    .tabla {
-        font-size: 10px;
-    }
+a.active, a:hover :not(.logo) {
+  background-color: #1b9bff;
+  transition: 0.5s;
 }
 
+/*Index*/
+main .banner {
+  background-image: url(../images/banner.jpg);
+  height: 400px;
+  background-size: cover;
+}
+main .banner .titulo-inicio {
+  color: white;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 50px;
+  padding-top: 130px;
+}
+main .especialidades-principal {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .especialidades-principal .especialidades-index {
+  margin-left: 10px;
+  margin-top: 100px;
+  background-image: url(../images/doctor1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 525px;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+}
+main .especialidades-principal .especialidades-index h2 {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #1AACAC;
+  border-radius: 40px;
+  margin-top: 35px;
+}
+main .especialidades-principal .especialidades-index ol {
+  list-style: none;
+  color: #1AACAC;
+  text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.62);
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 20px;
+}
+main .especialidades-principal .quienes-somos-index {
+  margin-top: 100px;
+  background-image: url(../images/doctor2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 525px;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+}
+main .especialidades-principal .quienes-somos-index h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #1AACAC;
+  margin-top: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+main .especialidades-principal .quienes-somos-index p {
+  text-align: center;
+  color: #1AACAC;
+  text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.62);
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 20px;
+}
+main .especialidades-principal .nuestros-horarios-index {
+  margin-right: 10px;
+  margin-top: 100px;
+  background-image: url(../images/doctor3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 525px;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+}
+main .especialidades-principal .nuestros-horarios-index h4 {
+  font-size: 2rem;
+  text-align: center;
+  color: #1AACAC;
+  margin-top: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+main .especialidades-principal .nuestros-horarios-index p {
+  text-align: center;
+  color: #1AACAC;
+  text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.62);
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 20px;
+}
+main .nuestro-consultorio h5 {
+  text-align: center;
+  font-size: 50px;
+  color: #3da1aa;
+  text-shadow: 4px 2px 6px rgba(0, 0, 0, 0.66);
+  margin-top: 120px;
+}
+main .carousel-inner {
+  max-height: 900px;
+  max-width: 1200px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
 
+/*Pagina especialidades*/
 .especialidades-body {
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/doctor4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/doctor4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+.especialidades-body .especialidades-title {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 35px;
+}
+.especialidades-body .tabla {
+  margin-top: 100px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.especialidades-body .tabla .row {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 40px;
 }
 
-
-.footer-especialidades {
-    position: sticky;
-    top: 100%;
-}
-
-.whatsapp-flotante-especialidades img{
-    width: 80px;
-    position: fixed;
-    bottom: 15px;
-    right: 10px;
-}
-
-@media (max-width: 500px) {
-    .whatsapp-flotante-especialidades img {
-        width: 55px;
-        bottom: 40px;
-    }
-}
-
-
-
-/* Pagina Turno */
-
-.turno-title{
-    font-size: 4rem;
-    color: white;
-    text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
-    text-align: center;
-    font-size: 50px;
-    margin-top: 35px;
-}
-
-.turno-page p{
-    text-align: center;
-    margin-top: 45px;
-}
-
+/*Pagina Turno*/
 .turno-body {
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/doctor3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/doctor3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+.turno-body .turno-page .tabla {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 30px;
+}
+.turno-body .turno-page h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 35px;
+}
+.turno-body .turno-page .row-turno {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 40px;
 }
 
-
-.row-turno {
-    background-color: rgba(0,0,0,.5);
-    color: #fff;
-    border-radius: 40px;
-  }
-
-.footer-turno {
-    position: sticky;
-    top: 100%;
-}
-
-.whatsapp-flotante-turno img{
-    width: 80px;
-    position: fixed;
-    bottom: 15px;
-    right: 10px;
-}
-
-@media (max-width: 500px) {
-    .whatsapp-flotante-turno img {
-        width: 55px;
-        bottom: 40px;
-    }
-}
-
-
-/* Pagina Quienes somos? */
-
-.quienes-somos-page h1{
-    font-size: 4rem;
-    color: white;
-    text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
-    text-align: center;
-    font-size: 50px;
-    margin-top: 50px;
-}
-
-.quienes-somos-page p{
-    font-size: 3rem;
-    padding: 20px 35px 20px 35px;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-@media (max-width: 1000px) {
-    .quienes-somos-page p{
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-bottom: 50px;
-    }
-}
-
-@media (max-width: 800px) {
-    .quienes-somos-page p{
-        font-size: 2rem;
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-bottom: 50px;
-    }
-}
-
-@media (max-width: 300px) {
-    .quienes-somos-page p{
-        font-size: 1.5rem;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 30px;
-    }
-}
-
+/* Pagina Quienes Somos*/
 .quienes-somos-body {
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/doctores-dibujo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/doctores-dibujo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+.quienes-somos-body .quienes-somos-page h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+}
+.quienes-somos-body .quienes-somos-page p {
+  font-size: 3rem;
+  padding: 20px 35px 20px 35px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 40px;
+  margin-top: 100px;
 }
 
-
-.quienes-somos-p {
-    background-color: rgba(0,0,0,.5);
-    color: #fff;
-    border-radius: 40px;
-    margin-top: 100px;
-  }
-
-.footer-quienes {
-    position: sticky;
-    top: 100%;
+/*Pagina Contacto*/
+.contacto-body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/Consultorio-1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
 }
-
-.whatsapp-flotante-quienes img{
-    width: 80px;
-    position: fixed;
-    bottom: 15px;
-    right: 10px;
+.contacto-body .formulario {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
 }
-
-@media (max-width: 500px) {
-    .whatsapp-flotante-quienes img {
-        width: 55px;
-        bottom: 40px;
-    }
+.contacto-body .formulario textarea {
+  font-size: 15px;
+  border-radius: 10px;
 }
-
-/* Pagina Contacto */
-
-
-form {
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    text-align: center;
-    width: 340px;
-    background-color: #0082e6;
+.contacto-body .formulario form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  background-color: #0082e6;
+  width: 70%;
 }
-
-form h2 {
-    font-size: 4rem;
-    color: white;
-    text-shadow: 4px 3px 2px rgba(0,0,0,0.6);
-    margin-bottom: 40px;
+.contacto-body .formulario form h2 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
 }
-
-.form-txt {
-    display: flex;
-    justify-content: space-between;
+.contacto-body .formulario form .input-grupo {
+  display: flex;
+  flex-direction: column;
 }
-
-
-.input-grupo {
-    display: flex;
-    flex-direction: column;
+.contacto-body .formulario form .input-grupo .boton {
+  margin-top: 15px;
 }
-
-.formulario input , textarea{
-    background-color: white;
-    padding: 20px 14px;
-    margin-bottom: 25px;
-    border: 0;
-    border-radius: 10px;
-    font-size: 15px;
+.contacto-body .formulario form input, .contacto-body .formulario form textarea {
+  background-color: white;
+  padding: 20px 14px;
+  margin-bottom: 25px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 15px;
 }
-
-.formulario textarea {
-    font-size: 15px;
+.contacto-body .whatsapp-contacto {
+  display: flex;
+  justify-content: center;
 }
-
-.formulario {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    justify-content: center;
+.contacto-body .whatsapp-contacto img {
+  width: 40px;
+}
+.contacto-body .whatsapp-contacto .contacto-p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 40px;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.contacto-body .mapita {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 ::placeholder {
-    color: #0082e6;
-    font-size: 15px;
+  color: #0082e6;
+  font-size: 15px;
 }
 
 :focus {
-    outline: 1px solid #16ffb9;
+  outline: 1px solid #16ffb9;
 }
 
-.formulario form {
-    width: 70%;
-}
-
-.boton {
-    margin-top: 15px;
-}
-
-textarea {
-    border-radius: 10px;
-}
-
-
-@media (max-width: 500px) {
-    .formulario input , textarea{
-        font-size: 10px;
-    }
-    .formulario textarea {
-        font-size: 10px;
-    }
-    form h2{
-        font-size: 2rem;
-    }
-    ::placeholder {
-        font-size: 10px;
-    }
-    form {
-        padding: 25px 32px;
-    }
-}
-
-
-
-.whatsapp-contacto {
-    display: flex;
-    justify-content: center;
-}
-
-.contacto-p {
-    background-color: rgba(0,0,0,.5);
-    color: white;
-    border-radius: 40px;
-    width: 50%;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.mapita {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.whatsapp-contacto img{
-    width: 40px;
-}
-
-
-.contacto-body {
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/Consultorio-1.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100vh;
-}
-
-.footer-contacto {
-    position: sticky;
-    top: 100%;
-}
-
-.whatsapp-flotante-contacto img{
-    width: 80px;
-    position: fixed;
-    bottom: 15px;
-    right: 10px;
-}
-
-@media (max-width: 500px) {
-    .whatsapp-flotante-contacto img {
-        width: 55px;
-        bottom: 40px;
-    }
-}
-
-/* Footer */
-
+/*Footer*/
 .footer {
-    background-color: #0082e6;
-    position: sticky;
-    top: 100%;
+  background-color: #0082e6;
+  position: sticky;
+  top: 100%;
 }
-
 .footer .socials {
-    text-align: center;
-    padding-bottom: 25px;
-    color: #4b4c4d;
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
 }
-
-.footer .socials a{
-    font-size: 20px;
-    color: inherit;
-    border: 1px solid #ccc;
-    width: 30px;
-    height: 30px;
-    line-height: 25px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 8px;
-    opacity: 0.75;
-    margin-top: 25px;
+.footer .socials a {
+  font-size: 20px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+  margin-top: 25px;
 }
-
-.footer .socials a:hover {
-    opacity: 0.9;
+.footer .socials .footer .socials a:hover {
+  opacity: 0.9;
 }
-
 .footer .copy {
-
-    text-align: center;
-    font-size: 18px;
-    color: #aaa;
+  text-align: center;
+  font-size: 18px;
+  color: #aaa;
+}
+.footer .whatsapp-flotante img {
+  width: 80px;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
 }
 
-.whatsapp-flotante img{
-    width: 80px;
+/*Header*/
+@media (max-width: 952px) {
+  .header label.logo {
+    padding-left: 50px;
+  }
+  .header nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .header .checkbtn {
+    display: block;
+  }
+  .header ul {
     position: fixed;
-    bottom: 15px;
-    right: 10px;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .header nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .header nav ul li a {
+    font-size: 20px;
+  }
+  .header a:hover, a.active {
+    background: none;
+    color: #0082e6;
+  }
+  .header #check:checked ~ ul {
+    left: 0;
+  }
+}
+/*Index*/
+/*Galeria de imagenes*/
+@media (max-width: 500px) {
+  main .nuestro-consultorio h5 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  main .carousel-inner {
+    max-height: 450px;
+    max-width: 600px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+  }
+}
+/*Pagina especialidades*/
+@media (max-width: 1000px) {
+  .especialidades-body .tabla {
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .especialidades-body .tabla {
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .especialidades-body .tabla {
+    font-size: 13px;
+  }
+}
+/*Pagina quienes somos?*/
+@media (max-width: 1000px) {
+  .quienes-somos-body .quienes-somos-page p {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .quienes-somos-body .quienes-somos-page p {
+    font-size: 2rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 300px) {
+  .quienes-somos-body .quienes-somos-page p {
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+}
+/*Pagina Contacto*/
+@media (max-width: 500px) {
+  .contacto-body .formulario input, textarea {
+    font-size: 10px;
+  }
+  .contacto-body .formulario textarea {
+    font-size: 10px;
+  }
+  .contacto-body .formulario form {
+    padding: 25px 32px;
+  }
+  .contacto-body .formulario form h2 {
+    font-size: 2rem;
+  }
+  .contacto-body ::placeholder {
+    font-size: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .footer .whatsapp-flotante img {
+    width: 55px;
+    bottom: 50px;
+  }
 }
 
-@media (max-width: 500px) {
-    .whatsapp-flotante img {
-        width: 55px;
-        bottom: 50px;
-    }
-}
+/*# sourceMappingURL=style.css.map */
