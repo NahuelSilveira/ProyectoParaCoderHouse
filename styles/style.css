@@ -93,7 +93,7 @@ main .banner .titulo-inicio {
   color: white;
   text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.6);
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   padding-top: 130px;
 }
 main .especialidades-principal {
@@ -452,6 +452,11 @@ main .carousel-inner {
   }
 }
 /*Index*/
+@media (max-width: 500px) {
+  main .banner .titulo-inicio {
+    font-size: 40px;
+  }
+}
 /*Galeria de imagenes*/
 @media (max-width: 500px) {
   main .nuestro-consultorio h5 {
